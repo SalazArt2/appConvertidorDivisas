@@ -7,8 +7,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIPickerViewDelegate,UIPickerViewDataSource>
 
-
+@property (strong,nonatomic) NSArray *tipoDeCambio;
+@property (strong,nonatomic) NSArray *tipoDeCambioP;
+@property (weak, nonatomic) IBOutlet UIPickerView *pckVDivisas;
+@property (weak, nonatomic) IBOutlet UITextField *txtMon;
+@property (weak, nonatomic) IBOutlet UILabel *lblConv;
 @end
 
